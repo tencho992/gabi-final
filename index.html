@@ -575,18 +575,17 @@
 
                 <!-- ============ Appointment Form - START ============ -->
 
-                <form id="request" class="contact-form popup mfp-hide" action="mailer/appointment.php" method="post">
+                <form id="request" class="contact-form popup mfp-hide" action="https://formspree.io/f/moqovvvj" method="POST">
 
                     <div class="head"><img src="img/logo/logo-3.png" alt="logo"></div>
                     <h3 class="focus-title"><i class="fa fa-thumb-tack"></i>Request an appointment</h3>
-
                     <label>
                         <strong>First Name *</strong>
-                        <input class="required" type="text" name="first_name">
+                        <input class="required" type="text" name="name">
                     </label>
                     <label>
                         <strong>Last Name *</strong>
-                        <input class="required" type="text" name="last_name">
+                        <input class="required" type="text" name="name">
                     </label>
                     <label>
                         <strong>Email *</strong>
@@ -599,44 +598,44 @@
                     <label>
                         <strong>Part of the Body</strong>
                         <select name="part_body">
-                            <option value="Leg">Leg</option>
-                            <option value="Calf">Calf</option>
-                            <option value="Ankle">Ankle</option>
-                            <option value="Foot">Foot</option>
-                            <option value="Arm">Arm</option>
-                            <option value="Forearm">Forearm</option>
-                            <option value="Wrist">Wrist</option>
-                            <option value="Hand">Hand</option>
-                            <option value="Nek">Nek</option>
-                            <option value="Head">Head</option>
-                            <option value="Back">Back</option>
-                            <option value="Buttocks">Buttocks</option>
-                            <option value="Genitals">Genitals</option>
-                            <option class="other" value="Other">Other (Specify below)</option>
+                            <option name="_optin" value="Leg">Leg</option>
+                            <option name="_optin" value="Calf">Calf</option>
+                            <option name="_optin" value="Ankle">Ankle</option>
+                            <option name="_optin" value="Foot">Foot</option>
+                            <option name="_optin" value="Arm">Arm</option>
+                            <option name="_optin" value="Forearm">Forearm</option>
+                            <option name="_optin" value="Wrist">Wrist</option>
+                            <option name="_optin" value="Hand">Hand</option>
+                            <option name="_optin" value="Nek">Nek</option>
+                            <option name="_optin" value="Head">Head</option>
+                            <option name="_optin" value="Back">Back</option>
+                            <option name="_optin" value="Buttocks">Buttocks</option>
+                            <option name="_optin" value="Genitals">Genitals</option>
+                            <option name="_optin" class="other" value="Other">Other (Specify below)</option>
                         </select>
                     </label>
                     <label id="other" class="hidden-field">
                         <strong>Specific Part of Body</strong>
-                        <input type="text" name="custom">
+                        <input type="text" name="address">
                     </label>
                     <label><strong>Tattoo Size *</strong> (ex: 5x4)
-                        <input class="required" type="text" name="size">
+                        <input class="required" type="text" name="_optin">
                     </label>
                     <div class="radio label">
                         <strong>Tattoo Color</strong>
                         <label>
-                            <input type="radio" value="Black &amp; White" name="color" checked>
+                            <input type="radio" value="Black &amp; White" name="_optin" checked>
                             <span class="radio-replacer"></span>
                             <span>Black &amp; White</span>
                         </label>
                         <label>
-                            <input class="required" type="radio" value="Color" name="color">
+                            <input class="required" type="radio" value="Color" name="_optin">
                             <span class="radio-replacer"></span>
                             <span>Color</span>
                         </label>
                     </div>
                     <label><strong>Tattoo Description *</strong>
-                        <textarea class="required" name="description"></textarea>
+                        <textarea class="required" name="message"></textarea>
                     </label>
                     <hr>
                     <label>
