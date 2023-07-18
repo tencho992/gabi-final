@@ -579,12 +579,13 @@
 
                     <div class="head"><img src="img/logo/logo-3.png" alt="logo"></div>
                     <h3 class="focus-title"><i class="fa fa-thumb-tack"></i>Request an appointment</h3>
+                    <input type="hidden" name="form_type" value="appointment">
                     <label>
                         <strong>First Name *</strong>
                         <input class="required" type="text" name="name">
                     </label>
                     <label>
-                        <strong>Last Name *</strong>
+                        <strong>Last Name </strong>
                         <input class="required" type="text" name="name">
                     </label>
                     <label>
@@ -596,7 +597,7 @@
                         <input class="required" type="text" name="phone">
                     </label>
                     <label>
-                        <strong>Part of the Body</strong>
+                        <strong>Part of the Body *</strong>
                         <select name="part_body">
                             <option name="_optin" value="Leg">Leg</option>
                             <option name="_optin" value="Calf">Calf</option>
@@ -606,11 +607,10 @@
                             <option name="_optin" value="Forearm">Forearm</option>
                             <option name="_optin" value="Wrist">Wrist</option>
                             <option name="_optin" value="Hand">Hand</option>
-                            <option name="_optin" value="Nek">Nek</option>
+                            <option name="_optin" value="Nek">Neck</option>
                             <option name="_optin" value="Head">Head</option>
                             <option name="_optin" value="Back">Back</option>
                             <option name="_optin" value="Buttocks">Buttocks</option>
-                            <option name="_optin" value="Genitals">Genitals</option>
                             <option name="_optin" class="other" value="Other">Other (Specify below)</option>
                         </select>
                     </label>
@@ -618,7 +618,7 @@
                         <strong>Specific Part of Body</strong>
                         <input type="text" name="address">
                     </label>
-                    <label><strong>Tattoo Size *</strong> (ex: 5x4)
+                    <label><strong>Tattoo Size </strong> (ex: 5x4)
                         <input class="required" type="text" name="_optin">
                     </label>
                     <div class="radio label">
@@ -641,12 +641,11 @@
                     <label>
                         <input class="required" type="checkbox" name="check">
                         <span class="checkbox-replacer"></span>
-                        <strong>Check to authorize the system *</strong>
+                        <strong>Acknowledge that an actual appointment with Gabi requires a deposit *</strong>
                     </label>
                     <hr>
                     <p>( <strong>*</strong> ) = Mandatory field</p>
                     <input class="submit btn md" type="submit" name="submit" value="Request Appointment">
-                    <input type="hidden" name="form_type" value="appointment">
 
                 </form>
 
