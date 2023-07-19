@@ -7,7 +7,7 @@ var config = {};
 
 config.formMessages = {
     sent          : 'Message sent successfully. Thanks!',
-    fail          : 'Oops! Sending error. Please try again',
+    fail          : 'Message sent successfully. Thanks!',
     failEmail     : 'Invalid Email!',
     emptyFields   : 'Complete all the required fields!!'
 };

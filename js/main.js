@@ -549,7 +549,7 @@
                 $msgText.text(formMessages.fail);                   // fail (problem with sending data)
             }).always(function(result) {
                 $that.find('.form-loader').remove();
-                // $msgForm.addClass(result).fadeIn('fast');           // show form message
+                $msgForm.addClass(result).fadeIn('fast');           // show form message
             });
 
         });
@@ -725,3 +725,4 @@
     });
 
 } )( jQuery );
+
